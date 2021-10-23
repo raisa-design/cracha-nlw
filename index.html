@@ -6,6 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raisa Almeida - Dowhile 2021</title>
 
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#D30678" />
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#D30678" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,59 +90,80 @@
   <link rel="stylesheet" href="style.css" />
 
   <body>
-    <main>
-      <div class="avatar">
-        <span>
-          <img src="images/build.svg" alt="Selo imagem" />
-        </span>
+    <main id="main">
+      <img
+        class="backgroundTop"
+        src="images/topbackground.png"
+        alt="Background"
+      />
+      <img class="range" src="images/rangepink.png" alt="Faixa" />
 
-        <img
-          id="userImage"
-          src="https://lorempixel.com/185/185/people/"
-          alt="Foto pessoal"
-        />
-      </div>
-      <div class="container">
-        <h1 id="userName">Raisa Almeida</h1>
-        <a id="userLink" href="https://github.com/raisa-design" target="_blank">
-          <img src="images/github.svg" alt="Github" />
-          <span id="userLogin">raisa_almeidaaa</span>
-        </a>
-        <p id="userBio">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos
-          placeat magni nobis repellendus. Rem animi repellendus,
-        </p>
+      <button
+        class="btn-theme light btn-show"
+        id="btnLight"
+        onclick="changeBackground(false)"
+      >
+        <img src="images/sun.png" alt="Modo Light" />
+      </button>
+      <button
+        class="btn-theme dark btn-hide"
+        id="btnDark"
+        onclick="changeBackground(true)"
+      >
+        <img src="images/moon.png" alt="Modo Dark" />
+      </button>
+      <div class="grouper">
+        <img class="cardtop" src="images/toppink.png" alt="Cardtop" />
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="Selo imagem" />
+          </span>
 
-        <ul id="socialLinks">
-          <li class="youtube">
-            <a href="https://www.youtube.com/" target="_blank">
-              <img
-                src="images/youtube.svg"
-                alt="ícone youtube"
-                target="_blank"
-              />
-            </a>
-          </li>
-          <li class="facebook">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img
-                src="images/facebook.svg"
-                alt="ícone facebook"
-                target="_blank"
-              />
-            </a>
-          </li>
-          <li class="instagram">
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="images/instagram.svg" alt="ícone instagram" />
-            </a>
-          </li>
-          <li class="linkedin">
-            <a href="https://www.linkedin.com/in/" target="_blank">
-              <img src="images/linkedin.svg" alt="ícone linkedin" />
-            </a>
-          </li>
-        </ul>
+          <img id="userImage" src="images/loading.gif" alt="Foto pessoal" />
+        </div>
+        <div class="container">
+          <h1 id="userName"></h1>
+          <a
+            id="userLink"
+            href="https://github.com/raisa-design"
+            target="_blank"
+          >
+            <img src="images/github.svg" alt="Github" />
+            <span id="userLogin"></span>
+          </a>
+          <p id="userBio"></p>
+
+          <ul id="socialLinks">
+            <li class="youtube">
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  src="images/youtube.svg"
+                  alt="ícone youtube"
+                  target="_blank"
+                />
+              </a>
+            </li>
+            <li class="facebook">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  src="images/facebook.svg"
+                  alt="ícone facebook"
+                  target="_blank"
+                />
+              </a>
+            </li>
+            <li class="instagram">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.svg" alt="ícone instagram" />
+              </a>
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/" target="_blank">
+                <img src="images/linkedin.svg" alt="ícone linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
     <script src="main.js"></script>
