@@ -150,11 +150,11 @@ ul {
 }
 
 main.bg-light {
-  background: url(images/light-background.png) no-repeat center/cover;
+  background: url(images/light-background-pink.png) no-repeat center/cover;
 }
 
 main.bg-dark {
-  background: url(images/background.svg) no-repeat center/cover;
+  background: url(images/backgroundpink.png) no-repeat center/cover;
 }
 
 .btn-hide {
